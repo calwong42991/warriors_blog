@@ -42,7 +42,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 20px;
 }
 
 .header {
@@ -61,18 +61,17 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
 }
 
 .text-box {
   position: absolute;
   text-align: center;
-  height: 350px;
-  width: 800px;
-  top: 50%;
+  width: 720px;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -93,7 +92,7 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 10px;
 }
