@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/calwong42991/warriors_blog/issues"
   },
-  "homepage": "https://github.com/calwong42991/warriors_blog#readme"
+  "homepage": "https://github.com/calwong42991/warriors_blog#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
