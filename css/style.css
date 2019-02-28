@@ -36,13 +36,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .header {
@@ -60,21 +64,21 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 2rem;
+  left: 2rem;
+}
+
+.logo {
+  height: 4.5rem;
 }
 
 .text-box {
   position: absolute;
   text-align: center;
-  width: 720px;
+  width: 72rem;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.logo {
-  height: 45px;
 }
 
 .heading-primary {
@@ -82,14 +86,14 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 10px
+  margin-bottom: 1rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
-  letter-spacing: 10px;
+  letter-spacing: 1rem;
 
   animation: moveInLeft;
   animation-duration: 2s;
@@ -103,9 +107,9 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 10px;
+  letter-spacing: 1rem;
 
   animation: moveInRight 2s ease-out;
 }
@@ -113,11 +117,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px)
+    transform: translateX(-10rem)
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -129,11 +133,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px)
+    transform: translateX(10rem)
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -145,7 +149,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px)
+    transform: translateY(3rem)
   }
 
   100% {
@@ -158,21 +162,21 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all .2s;
   position: relative;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -186,7 +190,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
