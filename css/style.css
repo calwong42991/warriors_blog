@@ -173,7 +173,7 @@ body {
   transform: translateY(0); }
 
 .composition {
-  top: 20rem;
+  top: 15rem;
   position: relative; }
   .composition__photo {
     width: 90%;
