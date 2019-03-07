@@ -269,7 +269,8 @@ body {
     font-size: 2.8rem;
     text-transform: uppercase;
     color: #FDB927;
-    text-align: center; }
+    text-align: center;
+    height: 10rem; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     box-decoration-break: clone;
