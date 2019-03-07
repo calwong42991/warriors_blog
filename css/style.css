@@ -230,8 +230,8 @@ body {
     background-color: orangered;
     color: #00A9E0;
     font-size: 2.5rem;
-    height: 50rem;
-    width: 80%;
+    height: 60rem;
+    width: 30rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -250,6 +250,42 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 26rem;
+    background-blend-mode: soft-light;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #00A9E0, #004ee0), url(../../img/logo_9.png); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #00A9E0, #004ee0), url(../../img/logo_6.png); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #00A9E0, #004ee0), url(../../img/logo_7.png); }
+  .card__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #FDB927;
+    text-align: center; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-color: #FFA300;
+      border-radius: .5rem;
+      padding: 0 .5rem 0 .5rem; }
+    .card__heading-span--2 {
+      background-color: #FFA300;
+      border-radius: .5rem;
+      padding: 0 .5rem 0 .5rem; }
+    .card__heading-span--3 {
+      background-color: #FFA300;
+      border-radius: .5rem;
+      padding: 0 .5rem 0 .5rem; }
 
 .header {
   height: 95vh;
@@ -257,6 +293,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%); }
   .header__logo-box {
     position: absolute;
@@ -323,7 +360,7 @@ body {
 
 .section-history {
   background-color: #58575713;
-  height: 110vh;
+  height: 130vh;
   padding: 20rem 30rem 70rem 30rem;
   transform: skewY(-4deg); }
   .section-history > * {
