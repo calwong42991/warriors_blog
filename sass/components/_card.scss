@@ -18,14 +18,20 @@
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--front {
-      background-color: orangered;
+      background-color: $color-primary-blue;
     }
 
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
+      
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-primary-logo-yellow, $color-primary-logo-yellow)
+
+      }
     }
   }
 
