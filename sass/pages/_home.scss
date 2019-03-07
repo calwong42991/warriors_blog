@@ -1,15 +1,15 @@
 .section-about {
   background-color: $color-grey-light-1;
   // background-color: $color-primary-yellow;
-  
+
   padding: 10rem 30rem 70rem 30rem;
   margin-top: -11rem;
-  transform: skewY(-7deg);
+  transform: skewY(-4deg);
   // text-align: center
 
   & > * {
     //margin-top: -5rem;
-    transform: skewY(7deg);
+    transform: skewY(4deg);
   }
   
 }
@@ -24,23 +24,22 @@
 
   // background-image: url('../../img/strengthInNumbers.png');
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -12rem;
+  transform: skewY(-4deg);
 
   & > * {
     margin-top: -10rem;
-    transform: skewY(7deg);
+    transform: skewY(4deg);
   }
 }
 
 .section-history {
   background-color: $color-grey-light-1;
   height: 110vh;
-  padding: 10rem 0 70rem 0;
+  padding: 20rem 30rem 70rem 30rem;
   //margin-top: -12rem;
-  transform: skewY(-7deg);
+  transform: skewY(-4deg);
   & > * {
     //margin-top: -10rem;
-    transform: skewY(7deg);
+    transform: skewY(4deg);
   }
 }
