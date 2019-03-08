@@ -43,3 +43,14 @@
     transform: skewY(4deg);
   }
 }
+
+.section-stories  {
+  background-color: $color-secondary-blue;
+  padding: 15rem 0;
+  transform: skewY(-4deg);
+
+  & > * {
+    //margin-top: -10rem;
+    transform: skewY(4deg);
+  }
+}

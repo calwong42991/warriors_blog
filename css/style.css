@@ -85,6 +85,18 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-secondary-white {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  display: inline-block;
+  color: #ffffff;
+  transition: all .2s; }
+  .heading-secondary-white:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -160,7 +172,9 @@ body {
   text-decoration: none;
   border-bottom: 0.1px solid #006BB6;
   padding: .3px;
-  transition: all .2s; }
+  transition: all .2s;
+  background-color: #ffffff;
+  border-radius: .5rem; }
 
 .btn-text:hover {
   background-color: #006BB6;
@@ -305,6 +319,56 @@ body {
     font-size: 3rem;
     font-weight: 100; }
 
+.story {
+  width: 75%;
+  margin: 5rem auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 7rem;
+  padding-left: 10rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: #000000;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-3rem) skewX(12deg);
+    position: relative; }
+  .story__img {
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all .5s ease; }
+    .story__img-1 {
+      transform: translate(-3rem) scale(1); }
+    .story__img-2 {
+      transform: translate(-3rem) scale(1); }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translate(-3rem) scale(0.9);
+    filter: blur(3px) brightness(80%); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(0, 106, 182, 0.8), rgba(0, 106, 182, 0.8)), url("../img/starting_five.jpg");
@@ -382,4 +446,11 @@ body {
   padding: 20rem 30rem 70rem 30rem;
   transform: skewY(-4deg); }
   .section-history > * {
+    transform: skewY(4deg); }
+
+.section-stories {
+  background-color: #006ab6cc;
+  padding: 15rem 0;
+  transform: skewY(-4deg); }
+  .section-stories > * {
     transform: skewY(4deg); }
