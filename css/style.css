@@ -454,3 +454,20 @@ body {
   transform: skewY(-4deg); }
   .section-stories > * {
     transform: skewY(4deg); }
+
+.section-book {
+  padding: 15rem 0;
+  background-color: #58575713;
+  height: 130vh;
+  transform: skewY(-4deg); }
+  .section-book > * {
+    transform: skewY(4deg); }
+
+.book {
+  background-image: url(../../img/oracle-1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  margin-top: 15rem;
+  height: 60rem; }

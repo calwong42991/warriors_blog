@@ -54,3 +54,28 @@
     transform: skewY(4deg);
   }
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-color: $color-grey-light-1;
+  height: 130vh;
+  transform: skewY(-4deg);
+
+
+  & > * {
+    //margin-top: -10rem;
+    transform: skewY(4deg);
+  }
+}
+
+.book {
+  background-image: url(../../img/oracle-1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  margin-top: 15rem;
+
+  height: 60rem;
+
+}
