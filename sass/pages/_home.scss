@@ -71,7 +71,8 @@
 .book {
   background-image: url(../../img/oracle-1.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   margin-top: 15rem;
