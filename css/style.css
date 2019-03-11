@@ -464,7 +464,7 @@ body {
     transform: skewY(4deg); }
 
 .book {
-  background-image: url(../../img/oracle-1.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/oracle-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -473,3 +473,6 @@ body {
   margin: 15rem auto;
   height: 60rem;
   width: 120rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
