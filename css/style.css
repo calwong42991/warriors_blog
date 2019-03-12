@@ -538,9 +538,8 @@ body {
   padding: 15rem 0;
   background-color: #58575713;
   height: 130vh;
-  transform: skewY(-4deg); }
-  .section-book > * {
-    transform: skewY(4deg); }
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -7.5rem; }
 
 .book {
   background-image: linear-gradient(105deg, rgba(0, 106, 182, 0.9) 0%, rgba(0, 106, 182, 0.9) 50%, transparent 50%), url(../../img/oracle-1.jpg);
