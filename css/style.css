@@ -152,6 +152,10 @@ body {
   .btn--white::after {
     background-color: #FDB927; }
 
+.btn--basic {
+  font-size: 2rem;
+  color: #006ab6cc; }
+
 .btn::after {
   content: "";
   display: inline-block;
