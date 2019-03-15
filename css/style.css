@@ -1,3 +1,22 @@
+/*
+  0 - 600px: phone
+  600 - 900px: tablet portrait
+  900 - 1200px: tablet landscape
+  [1200 - 1800px]: normal styles apply
+  1800 + : big desktop
+
+*/
+/*
+  $breakpoint argument choices:
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+
+    1em = 16px;
+
+    order: base + typography > general layouts + grid > page layout > components
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +26,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -621,7 +649,7 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
+  top: 3rem;
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
@@ -634,7 +662,7 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
+  top: 3.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#00A9E0, #004ee0);
   z-index: 1000;
