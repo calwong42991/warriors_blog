@@ -2,7 +2,10 @@
   max-width: $grid-width;
   //background-color: #eee;
   margin: 0 auto;
+  text-align: center;
   
+  
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -10,7 +13,7 @@
   @include clearfix;
 
   [class^="col-"] {
-    // background-color: #006ab6cc;
+    //background-color: #006ab6cc;
     float: left;
     height: 10rem;
 
@@ -25,6 +28,7 @@
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal})/ 3);
+    padding: 0 calc(((100% - 2 * #{$gutter-horizontal})/ 3)/6);
   }
 
   .col-2-of-3 {
@@ -44,7 +48,7 @@
   }
 
   .col-1-of-5 {
-    width: calc((100% - 4 * #{$gutter-horizontal})/ 5)
+    width: calc((100% - 4 * #{$gutter-horizontal})/ 5);
   }
 
   .col-1-of-3-fill {

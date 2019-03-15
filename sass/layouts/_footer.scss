@@ -1,8 +1,8 @@
 .footer {
   background-color: $color-primary-slate;
-  padding: 10rem 0;
+  padding: 5rem 0;
   font-size: 1.4rem;
-  height: 60rem;
+  height: 50rem;
   color: $color-white;
 
   &__logo-box {
@@ -12,11 +12,10 @@
 
   &__logo {
     height: 20rem;
-    width: auto;
   }
 
   &__navigation {
-    border-top: 1px solid rgba($color: $color-grey-dark, $alpha: 1.0);
+    border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
     display: inline-block;
   }
@@ -55,5 +54,6 @@
     padding-top: 2rem;
     display: inline-block;
     width: 80%;
+    text-align: left;
   }
 }

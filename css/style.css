@@ -73,7 +73,7 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #26282A;
-  padding: 2rem; }
+  padding: 3rem; }
 
 .heading-primary {
   color: #ffffff;
@@ -225,7 +225,7 @@ body {
   top: 10rem;
   position: relative; }
   .composition__photo {
-    width: 75%;
+    width: 65%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute;
@@ -274,7 +274,7 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 75rem;
-  margin: 0 auto; }
+  padding: 5rem 10rem; }
   .card__side {
     background-color: orangered;
     color: #00A9E0;
@@ -575,7 +575,8 @@ body {
 
 .row {
   max-width: 150rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .row:not(:last-child) {
     margin-bottom: 1rem; }
   .row::after {
@@ -590,7 +591,8 @@ body {
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/ 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem)/ 3); }
+    width: calc((100% - 2 * 6rem)/ 3);
+    padding: 0 calc(((100% - 2 * 6rem)/ 3)/6); }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
@@ -606,18 +608,17 @@ body {
 
 .footer {
   background-color: #26282A;
-  padding: 10rem 0;
+  padding: 5rem 0;
   font-size: 1.4rem;
-  height: 60rem;
+  height: 50rem;
   color: #ffffff; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
   .footer__logo {
-    height: 20rem;
-    width: auto; }
+    height: 20rem; }
   .footer__navigation {
-    border-top: 1px solid #999999;
+    border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
   .footer__list {
@@ -639,7 +640,8 @@ body {
     border-top: 1px solid #999999;
     padding-top: 2rem;
     display: inline-block;
-    width: 80%; }
+    width: 80%;
+    text-align: left; }
 
 .navigation__checkbox {
   display: none; }
@@ -649,7 +651,7 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 3rem;
+  top: 6rem;
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
@@ -662,7 +664,7 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 3.5rem;
+  top: 6rem;
   right: 6.5rem;
   background-image: radial-gradient(#00A9E0, #004ee0);
   z-index: 1000;
@@ -754,15 +756,17 @@ body {
 
 .section-about {
   background-color: #58575713;
-  padding: 10rem 30rem 70rem 30rem;
-  margin-top: -11rem;
+  height: 100vh;
+  padding: 10rem;
+  padding-right: 15rem;
+  margin-top: -12rem;
   transform: skewY(-4deg); }
   .section-about > * {
     transform: skewY(4deg); }
 
 .section-features {
   height: 95vh;
-  padding: 20rem 0;
+  padding: 25rem 2rem;
   background-image: linear-gradient(to right bottom, rgba(253, 185, 39, 0.8), rgba(253, 185, 39, 0.8)), url("../../img/strengthInNumbers.png");
   background-size: cover;
   transform: skewY(-4deg); }
@@ -772,25 +776,27 @@ body {
 
 .section-history {
   background-color: #58575713;
-  height: 130vh;
-  padding: 20rem 30rem 70rem 30rem;
+  height: 110vh;
+  width: 100%;
+  padding: 10rem 10rem 0rem 10rem;
   transform: skewY(-4deg); }
   .section-history > * {
     transform: skewY(4deg); }
 
 .section-stories {
   background-color: #006ab6cc;
-  padding: 15rem 0;
+  position: relative;
+  padding: 10rem 0;
   transform: skewY(-4deg); }
   .section-stories > * {
     transform: skewY(4deg); }
 
 .section-book {
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-color: #58575713;
-  height: 130vh;
-  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
-  margin-top: -7.5rem; }
+  height: 100vh;
+  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -7rem; }
 
 .book {
   background-image: linear-gradient(105deg, rgba(0, 106, 182, 0.9) 0%, rgba(0, 106, 182, 0.9) 50%, transparent 50%), url(../../img/oracle-1.jpg);
