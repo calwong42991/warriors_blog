@@ -82,25 +82,32 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 1rem; }
+  margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700;
-    letter-spacing: 1rem;
+    letter-spacing: 3.5rem;
     animation: moveInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     /* 
     animation-delay: 2s;
     animation-iteration-count: 3;
     */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1rem;
-    animation: moveInRight 2s ease-out; }
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -112,6 +119,12 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -555,7 +568,7 @@ body {
     hyphens: auto; }
 
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(0, 106, 182, 0.8), rgba(0, 106, 182, 0.8)), url("../img/starting_five.jpg");
   background-size: cover;
   background-position: top;
@@ -572,7 +585,7 @@ body {
     position: absolute;
     text-align: center;
     width: 90rem;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -667,7 +680,7 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6rem;
+  top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#00A9E0, #004ee0);
   z-index: 1000;
@@ -734,7 +747,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .8s; }
+    transition: all .2s; }
   .navigation__icon::before {
     top: -.8rem; }
   .navigation__icon::after {
@@ -760,8 +773,7 @@ body {
 .section-about {
   background-color: #58575713;
   height: 100vh;
-  padding: 10rem;
-  padding-right: 15rem;
+  padding: 10rem 15rem;
   margin-top: -12rem;
   transform: skewY(-4deg); }
   .section-about > * {

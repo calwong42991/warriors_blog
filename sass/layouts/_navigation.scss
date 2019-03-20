@@ -15,6 +15,17 @@
     box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: .1);
     text-align: center;
     cursor: pointer;
+
+    // @include respond(tab-port){
+    //   top: 4rem;
+    //   right: 4rem;
+    // }
+
+    // @include respond(phone){
+    //   top: 3rem;
+    //   right: 3rem;
+    // }
+
   }
 
   &__background {
@@ -22,13 +33,14 @@
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 6rem;
+    top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient($color-primary-logo-lightBlue, $color-primary-logo-lightBlue-2);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
     //transform: scale(80);
+    
   }
 
   &__nav {
@@ -114,7 +126,7 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .8s;
+      transition: all .2s;
     }
 
     &::before {
