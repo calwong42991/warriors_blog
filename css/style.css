@@ -587,7 +587,7 @@ body {
   .header__text-box {
     position: absolute;
     text-align: center;
-    width: 90rem;
+    width: 60%;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
@@ -836,7 +836,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   margin: 15rem auto;
   height: 60rem;
-  width: 120rem; }
+  width: 65%; }
   .book__form {
     width: 50%;
     padding: 6rem; }
