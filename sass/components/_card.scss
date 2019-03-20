@@ -14,13 +14,15 @@
     font-size: 2.5rem;
 
     height: 60rem;
-    width: 30rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--front {
@@ -48,7 +50,7 @@
 
   // front side styling
   &__picture {
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 26rem;
@@ -56,6 +58,8 @@
     overflow: hidden;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
     &--1 {
       background-image: linear-gradient(to right bottom, $color-primary-logo-lightBlue, $color-primary-logo-lightBlue-2), url(../../img/logo_9.png);

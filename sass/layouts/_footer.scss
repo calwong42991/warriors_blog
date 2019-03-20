@@ -1,8 +1,8 @@
 .footer {
   background-color: $color-primary-slate;
-  padding: 5rem 0;
+  padding: 10rem 0;
   font-size: 1.4rem;
-  height: 50rem;
+  // height: 50rem;
   color: $color-white;
 
   &__logo-box {
@@ -11,7 +11,8 @@
   }
 
   &__logo {
-    height: 20rem;
+    width: 15rem;
+    height: auto;
   }
 
   &__navigation {
