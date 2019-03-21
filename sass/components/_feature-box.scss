@@ -10,12 +10,20 @@
   
   // width: 30vh;
   height: 50vh;
+  position: relative;
 
   &__photo {
     width: 90%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     border-radius: 3px;
     margin: 0 auto;
+
+    @include respond(tab-port){
+      position: absolute;
+
+      height: 60%;
+      width: 60%;
+    }
   }
 
   &:hover {
@@ -24,6 +32,15 @@
 
   &__text {
     color: $color-black;
+  }
+
+  @include respond(tab-port){
+    position: absolute;
+    @include absCenter;
+    height: 30vh;
+    padding: 10rem 40rem;
+    width: 100%;
+    display: block;
   }
 
 }

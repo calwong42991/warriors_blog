@@ -14,7 +14,7 @@
   }
 
   @include respond(tab-port) {
-    max-width: 50rem;
+    max-width: 83rem;
     padding: 0 3rem;
   }
 
@@ -67,6 +67,10 @@
 
   .col-1-of-5 {
     width: calc((100% - 4 * #{$gutter-horizontal})/ 5);
+    
+    @include respond(tab-port){
+      padding-bottom: 3rem;
+    }
   }
 
   .col-1-of-3-fill {
