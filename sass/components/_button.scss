@@ -81,11 +81,39 @@
     transition: all .2s;
     // background-color: $color-white;
     border-radius: .5rem;
+    float: left;
   }
 
   &:hover {
     background-color: $color-primary-blue;
     color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transform: translateY(-.2rem);
+  }
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transform: translateY(0);
+  }
+}
+
+.btn-text-1 {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-white;
+    display: inline-block;
+    text-decoration: none;
+    //border-bottom: 1px solid $color-primary-blue;
+    padding: .3rem .3rem; 
+    transition: all .2s;
+    // background-color: $color-white;
+    border-radius: .5rem;
+    float: center;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary-blue;
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
     transform: translateY(-.2rem);
   }
