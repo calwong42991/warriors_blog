@@ -1,7 +1,7 @@
 .composition {
   top: 10rem;
   position: relative;
-  
+
   &__photo {
     width: 65%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -12,20 +12,29 @@
     //outline-offset: 2rem;
     
 
+
     &--1 {
       left: 0;
       top: -2rem;
+
     }
 
     &--2 {
       left: 50%;
       top: 2rem;
+
     }
 
     &--3 {
       left: 20%;
       top: 10rem;
+
     }
+
+    @include respond(tab-port){
+      margin: 0 auto;
+    }
+
 
     &:hover {
       outline: 1.5rem solid $color-secondary-blue;
@@ -33,8 +42,17 @@
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 20;
     }
+
+
   }
-  &:hover &__photo:not(:hover){
-   transform: scale(.9);
+
+  
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(.9);
+  }
+
+  @include respond(tab-port) {
+    top: 50rem;
   }
 }

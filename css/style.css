@@ -256,6 +256,9 @@ body {
     .composition__photo--3 {
       left: 20%;
       top: 10rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        margin: 0 auto; } }
     .composition__photo:hover {
       outline: 1.5rem solid #006ab6cc;
       transform: scale(1.05) translateY(-0.5rem);
@@ -263,6 +266,9 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+  @media (max-width: 56.25em) {
+    .composition {
+      top: 50rem; } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -654,6 +660,9 @@ body {
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -826,6 +835,13 @@ body {
   transform: skewY(-4deg); }
   .section-about > * {
     transform: skewY(4deg); }
+  @media (max-width: 56.25em) {
+    .section-about {
+      transform: skewY(-6deg);
+      padding: 10rem 0;
+      height: 125vh; }
+      .section-about > * {
+        transform: skewY(6deg); } }
 
 .section-features {
   height: 95vh;
@@ -836,6 +852,10 @@ body {
   .section-features > * {
     margin-top: -10rem;
     transform: skewY(4deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 15rem 0;
+      margin-top: -8rem; } }
 
 .section-history {
   background-color: #58575713;
