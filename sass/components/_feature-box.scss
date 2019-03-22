@@ -11,6 +11,16 @@
   // width: 30vh;
   height: 50vh;
   position: relative;
+  
+  @include respond(tab-port){
+    //@include absCenter;
+    margin-bottom: 10rem;
+    height: 20vh;
+    //padding: 10rem 40rem;
+    width: 100%;
+    //font-size: 5rem;
+    text-align: center;
+  }
 
   &__photo {
     width: 90%;
@@ -20,9 +30,10 @@
 
     @include respond(tab-port){
       position: absolute;
-
-      height: 60%;
-      width: 60%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 35%;
     }
   }
 
@@ -32,15 +43,14 @@
 
   &__text {
     color: $color-black;
+
+    @include respond(tab-port){
+      position: relative;
+      font-size: 2.5rem;
+      
+    }
   }
 
-  @include respond(tab-port){
-    position: absolute;
-    @include absCenter;
-    height: 30vh;
-    padding: 10rem 40rem;
-    width: 100%;
-    display: block;
-  }
+  
 
 }

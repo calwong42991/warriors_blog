@@ -15,7 +15,7 @@
   @include respond(tab-port){
     transform: skewY(-6deg);
     padding: 10rem 0;
-    height: 130vh;
+    height: 120vh;
 
     & > * {
       //margin-top: -5rem;
@@ -48,6 +48,8 @@
   @include respond(tab-port){
     padding: 15rem 0;
     margin-top: -8rem;
+    height: 150vh;
+    display: block;
   }
 
 

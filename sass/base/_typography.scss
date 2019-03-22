@@ -97,6 +97,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #006ab6cc;
+
+  @include respond(tab-port){
+    font-size: 3rem;
+    // text-align: left;
+  }
 }
 
 .paragraph {

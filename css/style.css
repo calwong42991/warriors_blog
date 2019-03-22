@@ -146,6 +146,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #006ab6cc; }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 3rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -261,7 +264,7 @@ body {
   position: relative; }
   @media (max-width: 56.25em) {
     .composition {
-      top: 35rem; } }
+      top: 47rem; } }
   .composition__photo {
     width: 55%;
     height: 15rem;
@@ -317,6 +320,12 @@ body {
   margin-top: 5rem;
   height: 50vh;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      margin-bottom: 10rem;
+      height: 20vh;
+      width: 100%;
+      text-align: center; } }
   .feature-box__photo {
     width: 90%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -325,23 +334,18 @@ body {
     @media (max-width: 56.25em) {
       .feature-box__photo {
         position: absolute;
-        height: 60%;
-        width: 60%; } }
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 35%; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__text {
     color: #000000; }
-  @media (max-width: 56.25em) {
-    .feature-box {
-      position: absolute;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 30vh;
-      padding: 10rem 40rem;
-      width: 100%;
-      display: block; } }
+    @media (max-width: 56.25em) {
+      .feature-box__text {
+        position: relative;
+        font-size: 2.5rem; } }
 
 .card {
   perspective: 150rem;
@@ -898,7 +902,7 @@ body {
     .section-about {
       transform: skewY(-6deg);
       padding: 10rem 0;
-      height: 130vh; }
+      height: 120vh; }
       .section-about > * {
         transform: skewY(6deg); } }
 
@@ -916,7 +920,9 @@ body {
   @media (max-width: 56.25em) {
     .section-features {
       padding: 15rem 0;
-      margin-top: -8rem; } }
+      margin-top: -8rem;
+      height: 150vh;
+      display: block; } }
 
 .section-history {
   background-color: #58575713;
