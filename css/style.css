@@ -324,8 +324,7 @@ body {
     .feature-box {
       margin-bottom: 10rem;
       height: 20vh;
-      width: 100%;
-      text-align: center; } }
+      width: 100%; } }
   .feature-box__photo {
     width: 90%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -344,7 +343,6 @@ body {
     color: #000000; }
     @media (max-width: 56.25em) {
       .feature-box__text {
-        position: relative;
         font-size: 2.5rem; } }
 
 .card {
@@ -708,7 +706,7 @@ body {
     width: calc((100% - 4 * 6rem)/ 5); }
     @media (max-width: 56.25em) {
       .row .col-1-of-5 {
-        padding-bottom: 3rem; } }
+        position: static; } }
   .row .col-1-of-3-fill {
     width: calc(((100% - 2 * 6rem)/ 3) / 2.3); }
 
@@ -921,8 +919,7 @@ body {
     .section-features {
       padding: 15rem 0;
       margin-top: -8rem;
-      height: 150vh;
-      display: block; } }
+      height: 150vh; } }
 
 .section-history {
   background-color: #58575713;

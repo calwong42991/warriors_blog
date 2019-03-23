@@ -69,8 +69,10 @@
     width: calc((100% - 4 * #{$gutter-horizontal})/ 5);
     
     @include respond(tab-port){
+      position: static;
+      //padding-bottom: 3rem;
+      //margin-bottom: 3rem;
       
-      padding-bottom: 3rem;
     }
   }
 
